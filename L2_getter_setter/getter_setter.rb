@@ -5,8 +5,9 @@ class Profile
         @address = address,
         @work = work
     end
-    attr_reader :full_name, :name, :age, :address, :work
-    attr_writer :full_name, :age, :work
+    #attr_reader :full_name, :name, :age, :address, :work
+    #attr_writer :full_name, :age, :work
+    attr_accessor :full_name, :name, :age, :address, :work
   end
   
   my_profile = Profile.new('Juan', 18, 'Bulacan', 'Instructor')
