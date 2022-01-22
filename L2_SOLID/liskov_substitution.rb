@@ -15,9 +15,6 @@ class ClaymoreUser < Character
 end
 
 class SwordUser < Character
-    def base_stats
-    end
-
     def weapon_equiped
         # character has sword equipped
     end 
