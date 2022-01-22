@@ -3,20 +3,14 @@ class Character
         @profile = profile
     end
 
-    def base_stats
-    end
-
-    def switch_weapon_equipped
-        # this method differs per weapon user
+    def weapon_equiped
+        "No Weapon equipped" # characters start with no weapon equipped
     end
 end
 
 class ClaymoreUser < Character
-    def base_stats 
-    end
-
-    def switch_weapon_equipped
-        # character can only equip claymores
+    def weapon_equiped
+        # character has claymore equipped
     end 
 end
 
@@ -24,34 +18,24 @@ class SwordUser < Character
     def base_stats
     end
 
-    def switch_weapon_equipped
-        # character can only equip swords
+    def weapon_equiped
+        # character has sword equipped
     end 
 end
 
 class PolearmUser < Character
-    def base_stats
-    end
-
-    def switch_weapon_equipped
-        # character can only equip polearms
+    def weapon_equiped
+        # character has polearm equipped
     end 
 end
 
 class BowUser < Character
-    def base_stats
-    end
-
-    def switch_weapon_equipped
-        # character can only equip bows
+    def weapon_equiped
+        # character has bow equipped
     end 
 end
 
 class CatalystUser < Character
-    def base_stats
-    end
-
-    def switch_weapon_equipped
-        # character can only equip catalysts
-    end 
+    # calling "weapon_equipped" will prompt "No weapon equipped" output
+    # this signals that CatalystUser has not defined "weapon_equipped"
 end
