@@ -4,38 +4,35 @@ class Character
     end
 end
 
+# Since "Character" is a generic class, we have created "Weapon" class for specific use cases
 class Weapon
     def weapon_equipped
         "No Weapon Equipped"
     end
 end
 
+
 class ClaymoreUser < Weapon
     def weapon_equiped
-        # character has claymore equipped
     end 
 end
 
-class SwordUser < Equipment
-
+class SwordUser < Weapon
     def weapon_equiped
-        # character has sword equipped
     end 
 end
 
-class PolearmUser < Character
+class PolearmUser < Weapon
     def weapon_equiped
-        # character has polearm equipped
     end 
 end
 
-class BowUser < Character
+class BowUser < Weapon
     def weapon_equiped
-        # character has bow equipped
     end 
 end
 
-class CatalystUser < Character
-    # calling "weapon_equipped" will prompt "No weapon equipped" output
-    # this signals that CatalystUser has not defined "weapon_equipped"
+class CatalystUser < Weapon
+    def weapon_equiped
+    end 
 end
